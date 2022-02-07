@@ -1,0 +1,73 @@
+
+.allVPS-title {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aVPS-container-title {
+display: flex;
+}
+
+.box-allVPS {
+background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 0, 0)),
+  linear-gradient(rgb(255, 166, 0), rgb(255, 0, 0)),
+  linear-gradient(rgb(255, 166, 0), rgb(255, 0, 0)),
+  linear-gradient(rgb(255, 166, 0), rgb(255, 0, 0)),
+  linear-gradient(rgba(27, 59, 85, 0), rgba(70, 131, 180, 0));
+background-repeat: no-repeat;
+background-size: 3px 50%, 50% 3px, 3px 50%, 50% 3px,
+  calc(100% - 8px) calc(100% - 8px);
+background-position: left bottom, left bottom, right top, right top, 4px 4px;
+padding: 5px 10px 5px 10px;
+}
+
+.allVPS-gradient-border {
+background-image: linear-gradient(red, purple),
+  linear-gradient(to right, purple, red),
+  linear-gradient(to bottom, purple, red),
+  linear-gradient(to left, purple, red),
+  linear-gradient(steelblue, steelblue);
+}
+
+.allVPS-title .aVPS-container-title h1 {
+font-size: 45px;
+animation: animate-allVPS 5s linear infinite;
+}
+
+@keyframes animate-allVPS {
+0%,
+18%,
+20%,
+50.1%,
+60%,
+65.1%,
+80%,
+90.1%,
+92% {
+  color: #420e17;
+  box-shadow: none;
+}
+18.1%,
+20.1%,
+30%,
+50%,
+60.1%,
+65%,
+80.1%,
+90%,
+92.1%,
+100% {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #f40337, 0 0 20px #f40323, 0 0 40px #63f403,
+    0 0 80px #a0f403, 0 0 160px #f4a003;
+}
+}
+
+@media screen and (max-width: 450px) {
+.allVPS-title .aVPS-container-title h1 {
+  font-size: 30px;
+}
+}
+

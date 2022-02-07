@@ -1,0 +1,107 @@
+:root {
+  --primary: #fff;
+  --secondary: red;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: #242424;
+  border: 1px solid var(--primary);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--sign {
+  background-color: red;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.btn--moretool {
+  background: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+  padding: 9px 21px;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0.5px 0.5px 8px rgb(197, 195, 195);
+  border-radius: 10px;
+  display: block;
+}
+
+.btn--lother {
+  padding: 9px 21px;
+  font-size: 15px;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--large--demo {
+  padding: 12px 38px;
+  font-size: 20px;
+}
+
+.btn--large--demo:hover,
+.btn--large:hover,
+.btn--medium:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
+}
+
+.btn--primary:hover {
+  transition: all 0.3s ease-out;
+  background: rgba(255, 255, 255, 0);
+  color: #eeecec;
+  transition: 250ms;
+}
+
+.btn--sign:hover {
+  transition: all 0.3s ease-out;
+  background: rgb(202, 68, 68);
+  color: #fff;
+  transition: 250ms;
+}
+
+.btn--moretool:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  .btn--lother {
+    padding: 7px 20px;
+    font-size: 10px;
+  }
+  .btn--moretool {
+    padding: 7px 20px;
+    font-size: 10px;
+  }
+}

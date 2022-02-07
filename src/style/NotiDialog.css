@@ -1,0 +1,25 @@
+.far {
+  animation: colorHand 5s linear infinite;;
+}
+
+.far b{
+  animation: colorHand 5s linear infinite;;
+}
+
+@keyframes colorHand{
+  0% {
+    color: #ff3333;
+  }
+  25% {
+    color: #8fff33;
+  }
+  50% {
+    color: #00e1ff;
+  }
+  75% {
+    color: #ff33ee;
+  }
+  100% {
+    color: #ff3333;
+  }
+}

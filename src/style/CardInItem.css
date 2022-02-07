@@ -1,0 +1,307 @@
+@font-face {
+  font-family: MyriadProCondensed;
+  src: local("MyriadProCondensed"), url("src/font/MyriadProCondensed.ttf");
+}
+
+:root {
+  --primary: #fff;
+  --secondary: #000;
+}
+
+.cardInI__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  z-index: 1;
+  margin: 50px;
+}
+
+.cardInI__container .cardInI {
+  width: 100%;
+  min-width: 300px;
+  height: 500px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.cardInI__container .cardInI:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.25s;
+}
+
+.div__cardInI__image {
+  z-index: 1;
+  width: 100%;
+  height: 45%;
+}
+
+.cardInI__container .cardInI:hover  .div__cardInI__image {
+  opacity: 0.85;
+  transition: 0.25s;
+}
+
+.cardInI__container .cardInI .div__cardInI__image .cardInI__image {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.cardInI__container .div__cardInI__saleoff {
+  z-index: 1;
+  width: 80%;
+  height: 35%;
+  position: absolute;
+  top: -60px;
+  left: -121px;
+}
+
+.cardInI__container .cardInI .div__cardInI__saleoff .cardInI__image__saleoff {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.cardInI__content {
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  bottom: 0px;
+  z-index: 1;
+  color: aliceblue;
+}
+
+.btMore {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cardInI__content h2 {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  font-size: 6.5em;
+  color: rgba(161, 148, 148, 0.09);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tool__content {
+  align-items: center;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+/* .cardInI__container:hover .cardInI .cardInI__content .tool__content {
+  margin-top: 30px;
+  transition: 0.5s;
+} */
+
+.cardInI__content .tool__content h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  color: rgb(6, 255, 243);
+  z-index: 1;
+}
+
+.tool_price {
+  color: yellow;
+}
+
+.ori-price {
+  -webkit-text-decoration-line: line-through;
+  -moz-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  color: rgb(255, 255, 255);
+  opacity: .4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sale-price {
+  animation: ani-sale 3s linear infinite;
+}
+
+@keyframes ani-sale {
+  0% {
+    transform: rotateY(-360deg);
+    color: #ff3333;
+  }
+  25% {
+    color: #fff133;
+  }
+  50% {
+    color: #ff0000;
+  }
+  75% {
+    color: #ebff33;
+  }
+  100% {
+    color: #ff3333;
+  }
+}
+
+.cardInI__content .tool__content h4 {
+  font-size: 1em;
+  margin: 0.4em 0 0.4em 0;
+  color: rgb(196, 250, 0);
+  z-index: 1;
+}
+
+.divTool__description {
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardInI__content .divTool__description {
+  font-size: 1em;
+  color: rgb(67, 255, 9);
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+.cardInI__content .divTool__description i {
+  color: red;
+}
+
+.tool__description {
+  color: yellow;
+}
+
+.cardInI__content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(200px);
+  transition: 1s;
+}
+
+@media screen and (max-width: 1279px) {
+  .cardInI {
+    height: 500px;
+  }
+  .cardInI__content a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cardInI__container {
+    max-width: 350px;
+  }
+  .cardInI__container .cardInI {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cardInI__container {
+    margin: 50px 20px;
+  }
+  .cardInI__container .cardInI {
+    height: 500px;
+  }
+
+  .cardInI__container .cardInI .cardInI__content .tool__content {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardInI__container {
+    max-width: 300px;
+  }
+  .cardInI__container .cardInI {
+    height: 500px;
+  }
+  .cardInI__content h2 {
+    font-size: 6em;
+  }
+  .tool__content {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardInI__container {
+    margin: 30px 20px;
+  }
+
+  .cardInI__tilt {
+    margin: 20px;
+  }
+
+  .cardInI__container .cardInI {
+    min-width: 270px;
+    height: 410px;
+  }
+
+  .cardInI__content h2 {
+    font-size: 5em;
+  }
+
+  .tool__content {
+    margin-top: 25px;
+  }
+
+  .cardInI__container .cardInI .cardInI__content .tool__content {
+    margin-top: 30px;
+  }
+
+  .cardInI__content i {
+    font-size: 0.8em;
+  }
+
+  .cardInI__content .tool__content h3 {
+    font-size: 1.2em;
+  }
+
+  .tool_price {
+    font-size: 0.9rem;
+  }
+
+  .cardInI__content .tool__content h4 {
+    font-size: 0.9em;
+  }
+
+  .cardInI__content .divTool__description {
+    font-size: 0.8em;
+  }
+
+  .cardInI__container .div__cardInI__saleoff {
+    top: -40px;
+    left: -107.5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cardInI__container .cardInI {
+    min-width: 250px;
+    height: 390px;
+  }
+  .cardInI__container .div__cardInI__saleoff {
+    top: -40px;
+    left: -99px;
+  }
+}
