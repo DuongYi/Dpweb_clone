@@ -119,17 +119,19 @@ function HomeContent() {
           <div className="Captcha__body">
             <div className="Captcha__publication__meta">
               <div className="tags">
-                <a href="/tools" rel="tag">
+                <Link to="/tools" rel="tag">
                   TOOL NRO
-                </a>
+                </Link>
+                <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
+                <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a>
                 {' '}
-                <a href="/tools" rel="tag">
+                <Link to="/tools" rel="tag">
                   Xem tất cả
-                </a>
+                </Link>
               </div>
             </div>
             <h1>
-              <a href="/tools">Dịch vụ Tool NRO </a>
+              <Link to="/tools">Dịch vụ Tool NRO </Link>
             </h1>
             <div className="Captcha__card__content">
               <h2>Uy tín, chất lượng nhất hiện nay</h2>
@@ -137,7 +139,7 @@ function HomeContent() {
               <h3 style={{ color: '#0008ff', marginBottom: '4px' }}>Danh sách tool hiện có:</h3>
               <div className="tools_all_divide">
                 <p>
-                  {tools.slice(0, tools.length / 2).map((tool) => (
+                  {tools.slice(0, Math.round(tools.length / 2)).map((tool) => (
                     <span className="Captcha__description" key={tool.id}>
                       <i className="fas fa-star" />
                       {' '}
@@ -148,7 +150,7 @@ function HomeContent() {
                   ))}
                 </p>
                 <p>
-                  {tools.slice(tools.length / 2, tools.length).map((tool) => (
+                  {tools.slice(Math.round(tools.length / 2), tools.length).map((tool) => (
                     <span className="Captcha__description" key={tool.id}>
                       <i className="fas fa-star" />
                       {' '}

@@ -1,9 +1,9 @@
 .far {
-  animation: colorHand 5s linear infinite;;
+  animation: colorHand 5s linear infinite;
 }
 
 .far b{
-  animation: colorHand 5s linear infinite;;
+  animation: colorHand 5s linear infinite;
 }
 
 @keyframes colorHand{
@@ -22,4 +22,39 @@
   100% {
     color: #ff3333;
   }
+}
+
+.notiadsi {
+  font-size: 18px;
+  animation: adsRttY 4s linear infinite;
+}
+
+@keyframes adsRttY {
+  0% {
+    transform: rotate(-360deg);
+    color: #ffe033;
+  }
+  25% {
+    color: #8fff33;
+  }
+  50% {
+    color: #ff0000;
+  }
+  75% {
+    color: #ff33ee;
+  }
+  100% {
+    color: #ffe033;
+  }
+}
+
+.notiadsa {
+  font-size: 15px;
+  color: #ff0000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fa-heart {
+  animation: colorHand 5s linear infinite;
 }

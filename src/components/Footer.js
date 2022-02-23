@@ -23,6 +23,9 @@ function Footer() {
                 <Link to="/">Giới thiệu</Link>
               </li>
               <li>
+                <Link to="/tools">Sản phẩm</Link>
+              </li>
+              <li>
                 <Link to="/">Dịch vụ</Link>
               </li>
               <li>
@@ -36,10 +39,13 @@ function Footer() {
                 <Link to="/FAQ">FAQ</Link>
               </li>
               <li>
-                <Link to="/tools">Sản phẩm</Link>
+                <Link to="/tools">Tool</Link>
               </li>
               <li>
-                <Link to="/tools">Tool</Link>
+                <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
+              </li>
+              <li>
+                <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a>
               </li>
             </ul>
           </div>

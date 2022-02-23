@@ -169,7 +169,37 @@ function NotiDialog() {
             Thời gian làm việc 9h sáng - 24h hàng ngày
           </Typography>
           <Typography gutterBottom>
-            <i className="far fa-hand-point-right" />
+            <i className="fas fa-fan notiadsi" />
+            {' '}
+            <a
+              className="notiadsa"
+              href="https://azngocrong.vn/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              azngocrong.vn
+            </a>
+            {' '}
+            Shop được vận hành và đảm bảo uy tín bởi MT GAMING
+          </Typography>
+          <Typography gutterBottom>
+            <i className="fas fa-fan notiadsi" />
+            {' '}
+            <a
+              className="notiadsa"
+              href="https://nickmt.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              nickmt.com
+            </a>
+            {' '}
+            Shop nick chính thức của MT Gaming
+          </Typography>
+          <Typography gutterBottom>
+            <i className="fas fa-heart" />
+            <i className="fas fa-heart" />
+            <i className="fas fa-heart" />
             {' '}
             Chúc anh em lướt web vui vẻ!!
           </Typography>

@@ -16,7 +16,7 @@ function TopBackground() {
     <>
       <div className="hero-container">
         {/* <video src="static/videos/bg3.mp4" autoPlay loop muted /> */}
-        <img className="topbg-background" loading="lazy" src="static/images/allkda.jpg" alt="bg" />
+        <img className="topbg-background" src="static/images/allkda.jpg" alt="bg" />
         <h1>
           Chào mừng đến với
           {' '}

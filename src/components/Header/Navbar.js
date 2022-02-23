@@ -71,21 +71,29 @@ function Navbar() {
                 Tool
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                to="/captcha"
+            <li className="nav-item">
+              <a
+                href="https://nickmt.com/"
+                target="_blank"
                 className="nav-links"
                 onClick={closeMobileMenu}
+                rel="noreferrer"
               >
-                Captcha
-              </Link>
+                Shop Nick
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="/VPS" className="nav-links" onClick={closeMobileMenu}>
-                VPS
-              </Link>
-            </li> */}
-            <li className="nav-item">
+              <a
+                href="https://azngocrong.vn/"
+                target="_blank"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                rel="noreferrer"
+              >
+                Thanh lý nick
+              </a>
+            </li>
+            {/* <li className="nav-item">
               <Link
                 to="/tools"
                 className="nav-links"
@@ -93,7 +101,7 @@ function Navbar() {
               >
                 Dịch vụ
               </Link>
-            </li>
+            </li> */}
             {/* {!account.user
               && (
               <li>

@@ -15,6 +15,8 @@ import PropTypes from 'prop-types';
 
 import { SALE } from 'src/constants';
 
+import moduleclasses from './ToolDetail.module.css';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'relative',
@@ -202,7 +204,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(2),
     },
     bt: {
-      padding: theme.spacing(0),
+      paddingBottom: theme.spacing(2),
     },
     btBook: {
       marginRight: 10,
@@ -280,6 +282,7 @@ function ToolDetail({ tool }) {
   const desArr = tool.note.split('|');
   const classes = useStyles();
   const [trailerDialogOpen, setTrailerDialogOpen] = useState(false);
+  const [adsDialogOpen, setAdsDialogOpen] = useState(false);
 
   return (
     <div
@@ -452,29 +455,6 @@ function ToolDetail({ tool }) {
               Dũng Phạm
             </a>
           </Typography>
-          {/* {!(tool.price)
-            ? (
-              <Typography
-                className={classes.dev__support}
-                variant="body1"
-                color="secondary"
-              >
-                <i className="fas fa-headset" style={{ color: 'yellow', fontSize: 16 }} />
-                {' '}
-                Nếu có khó khăn trong quá trình tự cài đặt, có thể liên hệ ad
-                {' '}
-                <a
-                  className={classes.VSsYii}
-                  href="https://www.facebook.com/VSsYii193"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  VSsYii
-                </a>
-                {' '}
-                để được trợ giúp (Phí 50k ATM/Momo)
-              </Typography>
-            ) : <div style={{ display: 'none' }} />} */}
 
           <Grid container className={classes.bt}>
             <a
@@ -500,20 +480,47 @@ function ToolDetail({ tool }) {
                 </Button>
               )
               : (
+                <Button
+                  className={classes.btDownload}
+                  onClick={() => {
+                    setAdsDialogOpen(true);
+                  }}
+                >
+                  Tải xuống
+                </Button>
+              )}
+          </Grid>
+
+          {!(tool.price)
+            ? (
+              <span className={moduleclasses.webads}>
+                <i className="fas fa-fan" />
+                {' '}
+                Dịch vụ mua vàng, nhập nick tự động
+                {' '}
                 <a
-                  href={tool.link}
-                  style={{ textDecoration: 'none' }}
+                  className={classes.VSsYii}
+                  href="https://azngocrong.vn/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button
-                    className={classes.btDownload}
-                  >
-                    Tải xuống
-                  </Button>
+                  azngocrong.vn
                 </a>
-              )}
-          </Grid>
+                <br />
+                <i className="fas fa-fan" />
+                {' '}
+                Dịch vụ bán nick, mua vàng, mua ngọc, mua đồ tự động
+                {' '}
+                <a
+                  className={classes.VSsYii}
+                  href="https://nickmt.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  nickmt.com
+                </a>
+              </span>
+            ) : <div style={{ display: 'none' }} />}
         </div>
       </div>
       <Dialog
@@ -535,6 +542,35 @@ function ToolDetail({ tool }) {
         ) : (
           <h1 style={{ padding: '2rem' }}>Tool/Mod này không có video demo</h1>
         )}
+      </Dialog>
+      <Dialog
+        open={adsDialogOpen}
+        onClose={() => {
+          setAdsDialogOpen(false);
+        }}
+      >
+
+        <div
+          className={moduleclasses.dialog_ads}
+        >
+          <h1>AZNGOCRONG.VN, NICKBMT.COM</h1>
+          <h2>Uy tín, nhanh gọn, chất lượng tuyệt đối</h2>
+          <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">
+            <img src="https://azngocrong.vn/image/nhap-nick-2021.gif" alt="Banner1" width="100%" />
+          </a>
+          <a href="https://nickmt.com/" target="_blank" rel="noreferrer">
+            <img src="https://nickmt.com/image/luckywheel/b%C3%A1n-nick-mt-.gif" width="100%" alt="Banner2" />
+          </a>
+          <a
+            className={moduleclasses.btnads}
+            href={tool.link}
+            style={{ textDecoration: 'none' }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Tải TOOL/MOD
+          </a>
+        </div>
       </Dialog>
     </div>
   );

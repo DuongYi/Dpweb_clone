@@ -1,0 +1,113 @@
+.webads {
+  font-size: 16px;
+  color: #1beb1b;
+}
+
+.webads i{
+  font-size: 18px;
+  animation: adsRttY 4s linear infinite;
+}
+
+@keyframes adsRttY {
+  0% {
+    transform: rotate(-360deg);
+    color: #ffe033;
+  }
+  25% {
+    color: #8fff33;
+  }
+  50% {
+    color: #ff0000;
+  }
+  75% {
+    color: #ff33ee;
+  }
+  100% {
+    color: #ffe033;
+  }
+}
+
+.webads a {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.07rem;
+  font-size: 18px;
+  font-weight: 900;
+  animation: colorAds 3s linear infinite;
+}
+
+@keyframes colorAds{
+  0% {
+    color: #ff3333;
+  }
+  25% {
+    color: #8fff33;
+  }
+  50% {
+    color: #00e1ff;
+  }
+  75% {
+    color: #ff33ee;
+  }
+  100% {
+    color: #ff3333;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .webads {
+    font-size: 14px;
+  }
+  .webads a {
+    font-size: 14px;
+  }
+}
+
+.dialog_ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog_ads h1{
+  padding: 5px;
+  font-size: 20px;
+  animation: colorAds 3s linear infinite;
+}
+
+.dialog_ads h2 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.dialog_ads a {
+  width: 100%;
+}
+
+.btnads {
+  width: 45%!important;
+  text-transform: uppercase;
+  border: 1px solid #cccc;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  background-color: red;
+  padding: 10px 30px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .dialog_ads h1 {
+    font-size: 16px;
+    padding: 4px;
+  }
+  .dialog_ads h2 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .btnads {
+    width: 60%!important;
+  }
+}
+
