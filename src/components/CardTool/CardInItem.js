@@ -26,7 +26,7 @@ function CardInItem({ tool }) {
       <Link to={`/tools/${tool.id}`} style={{ textDecoration: 'none' }}>
         <div className="cardInI">
           <div className="div__cardInI__image">
-            <img className="cardInI__image" src={tool.image} alt="tool__bg" />
+            <img className="cardInI__image" src={`static/images/tools/${tool.image}`} alt="tool__bg" />
           </div>
           {(SALE.sale !== 1 && tool.price && tool.name !== 'AutoPro_DP 200')
             ? (

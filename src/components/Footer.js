@@ -39,7 +39,7 @@ function Footer() {
                 <Link to="/tools">Sản phẩm</Link>
               </li>
               <li>
-                <Link href="/tools">Tool</Link>
+                <Link to="/tools">Tool</Link>
               </li>
             </ul>
           </div>

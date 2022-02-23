@@ -17,7 +17,7 @@ import './style/App.css';
 const history = createBrowserHistory();
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(true);
 
   const checkAuthHandler = () => {
     setIsAuth(true);
