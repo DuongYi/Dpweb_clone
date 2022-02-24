@@ -155,6 +155,14 @@ function HomeContent() {
                       <i className="fas fa-star" />
                       {' '}
                       <Link to={`/tools/${tool.id}`} className="tools_all_link">{tool.name}</Link>
+                      {!tool.price && (
+                      <span
+                        className="Captcha__free"
+                      >
+                        {' '}
+                        Miễn phí
+                      </span>
+                      )}
                       {' '}
                       <br />
                     </span>

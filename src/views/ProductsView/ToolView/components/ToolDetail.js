@@ -553,7 +553,7 @@ function ToolDetail({ tool }) {
         <div
           className={moduleclasses.dialog_ads}
         >
-          <h1>AZNGOCRONG.VN, NICKBMT.COM</h1>
+          <h1>AZNGOCRONG.VN, NICKMT.COM</h1>
           <h2>Uy tín, nhanh gọn, chất lượng tuyệt đối</h2>
           <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">
             <img src="https://azngocrong.vn/image/nhap-nick-2021.gif" alt="Banner1" width="100%" />
