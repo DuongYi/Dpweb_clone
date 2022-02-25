@@ -10,11 +10,11 @@ function Routes() {
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Switch>
-        <Route
+        {/* <Route
           exact
           path="/login"
           component={lazy(() => import('./views/auth/Login'))}
-        />
+        /> */}
         {/* <Route
           exact
           path="/register"
@@ -41,11 +41,11 @@ function Routes() {
                   path="/tools"
                   component={lazy(() => import('src/views/AllProductsView/AllToolView'))}
                 />
-                {/* <Route
+                <Route
                   exact
-                  path="/VPS"
-                  component={lazy(() => import('src/views/AllProductsView/AllVPSView'))}
-                /> */}
+                  path="/Blog/1"
+                  component={lazy(() => import('src/views/Blog/Blog1'))}
+                />
                 <Route
                   exact
                   path="/"
