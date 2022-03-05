@@ -13,7 +13,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [navbar, setNavbar] = useState(false);
-  const account = useSelector((state) => state.account);
+  // const account = useSelector((state) => state.account);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);

@@ -5,6 +5,11 @@
   font-family: "PT Sans", sans-serif;
 }
 
+@font-face {
+  font-family: 'BadScript';
+  src: url('src/font/BadScript-Regular.ttf');
+}
+
 html::-webkit-scrollbar {
   width: 0.6em;
   color: transparent;
@@ -18,4 +23,26 @@ html::-webkit-scrollbar-thumb:active {
   border-radius: "8px";
   border: 4px solid transparent;
   background-color: #cccccc;
+}
+
+@keyframes title--animate {
+  0% {
+    color: #fff;
+    filter: blur(0px) hue-rotate(0deg);
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff,
+      0 0 400px #00b3ff;
+  }
+  30%,
+  70% {
+    color: #fff;
+    filter: blur(1px) hue-rotate(360deg);
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff;
+  }
+  100% {
+    color: transparent;
+    box-shadow: none;
+    filter: blur(1px) hue-rotate(0deg);
+  }
 }

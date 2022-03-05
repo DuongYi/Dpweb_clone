@@ -108,7 +108,6 @@ function LoginView() {
           <Grid className={classes.bgWrapper} item lg={5}>
             <div className={classes.bg} />
           </Grid>
-
           <Grid className={classes.content} item lg={7} xs={12}>
             <div className={classes.contentHeader}>
               <IconButton

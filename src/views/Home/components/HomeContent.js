@@ -13,6 +13,9 @@ import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import 'src/style/HomeContent.css';
 import axios from 'src/utils/axios';
 
+import AdsSlick from './AdsSlick';
+import BlogSlick from './BlogSlick';
+
 function HomeContent() {
   const isMountedRef = useIsMountedRef();
   const { enqueueSnackbar } = useSnackbar();
@@ -88,7 +91,7 @@ function HomeContent() {
   // ];
 
   return (
-    <>
+    <div className="Home-content-container">
       <div className="content">
         {/* <div className="content__AllProduct">
           <h1 className="AllProduct__Title">Tất cả sản phẩm</h1>
@@ -211,7 +214,36 @@ function HomeContent() {
             ))}
           </div>
         </div>
+      </div>
 
+      <div className="ads-container">
+        <div className="axcontent">
+          <h1>
+            <span>G</span>
+            <span>i</span>
+            <span>a</span>
+            <span>n</span>
+            {' '}
+            <span>h</span>
+            <span>à</span>
+            <span>n</span>
+            <span>g</span>
+            {' '}
+            <span>A</span>
+            <span>z</span>
+            <span>n</span>
+            <span>g</span>
+            <span>o</span>
+            <span>c</span>
+            <span>r</span>
+            <span>o</span>
+            <span>n</span>
+            <span>g</span>
+          </h1>
+          <AdsSlick />
+        </div>
+      </div>
+      <div className="content">
         <div className="content__Pr2">
           <Link
             to="/tools"
@@ -238,36 +270,17 @@ function HomeContent() {
             ))}
           </div>
         </div>
-
-        {/* <div className="content__Pr3">
-          <Link to="/VPS" className="Pr3__Title">
-            <div className="container__title">
-              <div className="box">
-                <h1>VPS</h1>
-              </div>
-              <div className="gradient-border" />
-            </div>
-          </Link>
-          <div className="btn-AllPr3">
-            <Link to="/VPS" title="Click để xem tất cả">
-              <Button onClick={() => this} buttonStyle="btn--outline">
-                <p>Xem tất cả</p>
-              </Button>
-            </Link>
-          </div>
-          <div className="Pr3__body">
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
-          </div>
-        </div> */}
       </div>
-    </>
+      <div className="blog-content">
+        <h1 className="blog-title">
+          <span>Dũng Phạm&rsquo;</span>
+          s
+          {' '}
+          <span>Blog</span>
+        </h1>
+        <BlogSlick />
+      </div>
+    </div>
   );
 }
 

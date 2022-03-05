@@ -7,30 +7,49 @@
     linear-gradient(180deg, #fff, #262626);
     position: relative;
     width: 100%;
-    height: 100vh;
-    display: flex;
+    min-height: 100vh;
     color: #fff;
-    flex-direction: column;
     align-items: center;
+    padding: 100px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .boxAds {
-  padding-top: 100px;
-  max-width: 70%;
-  height: 30vh;
+  height: 40vh;
   overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.boxAds div {
+  width: 100%;
+  height: 100%;
 }
 
 .boxAds img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .boxContent {
-  max-width: 70%;
-  padding: 0 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 20px 100px;
+}
+
+.container_adsleft {
+  position: absolute;
+  top: 100px;
+  left: 12%;
+  width: 10%;
+}
+
+.container_adsright {
+  position: absolute;
+  top: 100px;
+  right: 8%;
+  width: 10%;
 }
