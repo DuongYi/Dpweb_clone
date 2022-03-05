@@ -4,18 +4,18 @@
   vertical-align: top;
   margin-left: 0!important;
   margin-right: 0!important;
-  padding: 15px;
+  padding: 20px;
   height: 100%;
 }
 
 .product-grid {
-  padding: 25px;
+  padding: 0px 0;
   border-radius: 10px;
   border: 3px solid rgba(54, 129, 83, 0.08);
   background-color: #fff;
   text-align: center;
   transition: all .3s;
-  height: 100%;
+  height: 100%!important;
   display: flex;
   flex-flow: column;
   position: relative;
@@ -24,46 +24,38 @@
 .product-grid:hover {
   cursor: pointer;
   box-shadow: 0 10px 20px 0 rgb(76 80 61 / 10%);
-  border: 3px solid rgba(54, 129, 83,.2);
+  border: 3px solid rgba(236, 93, 37, 0.5);
 }
 
-.product-thumbnail {
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.product-grid .product-thumbnail:before {
-  content: "";
-  display: block;
+.product-grid .product-thumbnail {
   width: 100%;
-  height: 0;
-  padding-top: 100%;
+  min-height: 100%;
+  padding-bottom: 10px;
 }
 
 .product-grid .product-thumbnail img {
-  position: absolute;
-  top: 10px;
-  left: 0;
   width: 100%;
-  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   object-fit: contain;
   display: block;
 }
 
 .product-grid .product-title {
     flex: 1;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    color: #4c503d;
+    color: #f00404d8;
     line-height: 19px;
     margin: 0 0 5px;
 }
 
 .product-grid .product-title:hover {
-  color: #49856e;
+  color: #448fcc;
 }
 
-.product-grid a {
+a {
   color: inherit;
   text-decoration: none;
   font-weight: inherit;
@@ -78,8 +70,26 @@
 }
 
 .product-grid .product-price span {
-    color: #49856e;
+    color: #df923b;
 }
+
+.product-grid .product-button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .product-grid .product-title {
+      font-size: 15px;
+  }
+  .product-grid .product-price {
+    font-size: 15px;
+  }
+}
+
+
 
 
 

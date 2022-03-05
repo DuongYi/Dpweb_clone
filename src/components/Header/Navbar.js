@@ -72,6 +72,15 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link
+                to="/blogs"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Blog
+              </Link>
+            </li>
+            <li className="nav-item">
               <a
                 href="https://nickmt.com/"
                 target="_blank"
@@ -90,7 +99,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
                 rel="noreferrer"
               >
-                Thanh lý nick
+                Thanh lý Nick
               </a>
             </li>
             {/* <li className="nav-item">

@@ -6,9 +6,11 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import { PropTypes } from 'prop-types';
 import Slider from 'react-slick';
 
-import AdsItem from 'src/components/AdsItem';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+import AdsItem from 'src/components/AdsItem';
+import { DUMMY_ADS } from 'src/constants';
 
 const useStyles = makeStyles(() => ({
   nextArrow: {
@@ -75,38 +77,6 @@ PrevArrow.propTypes = {
 };
 
 function AdsSlick() {
-  const items = [
-    {
-      id: 1,
-      title: 'Nhập Nick tự động',
-      image: 'https://azngocrong.vn/image/nhap-nick-2021.gif',
-      price: 'Tự động',
-      link: 'https://azngocrong.vn/index.php?controller=vongquay&id=1',
-    },
-    {
-      id: 2,
-      title: 'Vòng quay siêu cấp',
-      image: 'https://azngocrong.vn/image/vong-quay-nick-sieu-cap.gif',
-      price: '11.000đ',
-      link: 'https://azngocrong.vn/index.php?controller=vongquay&id=1',
-    },
-    {
-      id: 3,
-      title: 'Vòng quay có lãi',
-      image: 'https://azngocrong.vn/image/vong-quay-vang-cuc-lai.gif',
-      price: '13.000đ',
-      link: 'https://azngocrong.vn/index.php?controller=vongquay&id=2',
-    },
-    {
-      id: 4,
-      title: 'Quay Nick 50 tỷ',
-      image: 'https://azngocrong.vn/image/vong-quay-nick-50-ty.gif',
-      price: '20.000đ',
-      description: 'Tất cả',
-      link: 'https://azngocrong.vn/index.php?controller=vongquay&id=4',
-    },
-  ];
-
   const settings = {
     infinite: true,
     speed: 500,
@@ -148,7 +118,7 @@ function AdsSlick() {
   };
   return (
     <Slider {...settings}>
-      {items.map((item) => (
+      {DUMMY_ADS.map((item) => (
         <AdsItem key={item} product={item} />
       ))}
     </Slider>

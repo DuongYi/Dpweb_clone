@@ -46,3 +46,7 @@ html::-webkit-scrollbar-thumb:active {
     filter: blur(1px) hue-rotate(0deg);
   }
 }
+
+.slick-dots li.slick-active button:before {
+  color:rgb(255, 255, 255) !important;
+}

@@ -36,10 +36,10 @@ function Footer() {
           <div className="footer__case">
             <ul className="footer__menu">
               <li>
-                <Link to="/FAQ">FAQ</Link>
+                <Link to="/tools">Tool</Link>
               </li>
               <li>
-                <Link to="/tools">Tool</Link>
+                <Link to="/blogs">Blog</Link>
               </li>
               <li>
                 <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>

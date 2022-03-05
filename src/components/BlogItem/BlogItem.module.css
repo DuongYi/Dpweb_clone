@@ -28,7 +28,7 @@
 .blog-grid .blog-thumbnail img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
