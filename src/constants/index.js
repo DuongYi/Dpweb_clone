@@ -4,6 +4,8 @@ export const SALE = {
   day: '10/10'
 };
 
+export const LINK_ADS = 'https://www.fb88aff.com/Track?aID=5569';
+
 export const DUMMY_BLOG = [
   {
     id: 1,

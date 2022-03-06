@@ -1,13 +1,11 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 
-// import { Link } from "react-router-dom";
 import 'src/style/CardInItem.css';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import Button from 'src/components/Button';
-import { SALE } from 'src/constants';
+import { LINK_ADS, SALE } from 'src/constants';
 
 function getMoneys(money) {
   let result = '';
@@ -21,9 +19,18 @@ function getMoneys(money) {
 }
 
 function CardInItem({ tool }) {
+  // eslint-disable-next-line no-unused-vars
+  const openTabHandler = () => {
+    window.open(LINK_ADS, '_blank');
+  };
+
   return (
     <div className="cardInI__container">
-      <Link to={`/tools/${tool.id}`} style={{ textDecoration: 'none' }}>
+      <Link
+        to={`/tools/${tool.id}`}
+        onClick={!tool.price ? openTabHandler : null}
+        style={{ textDecoration: 'none' }}
+      >
         <div className="cardInI">
           <div className="div__cardInI__image">
             <img className="cardInI__image" loading="lazy" src={`static/images/${tool.image}.png`} alt={tool.image} />

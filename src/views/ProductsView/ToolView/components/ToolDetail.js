@@ -284,6 +284,11 @@ function ToolDetail({ tool }) {
   const [trailerDialogOpen, setTrailerDialogOpen] = useState(false);
   const [adsDialogOpen, setAdsDialogOpen] = useState(false);
 
+  const openTabHandler = () => {
+    window.open('https://azngocrong.vn/', '_blank');
+    window.open(tool.link, '_parent');
+  };
+
   return (
     <div
       className={classes.root}
@@ -564,6 +569,7 @@ function ToolDetail({ tool }) {
           <a
             className={moduleclasses.btnads}
             href={tool.link}
+            onClick={openTabHandler}
             style={{ textDecoration: 'none' }}
             target="_blank"
             rel="noreferrer"

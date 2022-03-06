@@ -9,6 +9,7 @@ import Button from 'src/components/Button';
 // import CardInfo from 'src/components/CardInfo';
 // import CardItem from 'src/components/CardItem';
 import CardInItem from 'src/components/CardTool/CardInItem';
+import { LINK_ADS } from 'src/constants';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import 'src/style/HomeContent.css';
 import axios from 'src/utils/axios';
@@ -25,6 +26,10 @@ function HomeContent() {
 
   // const [voucher, setVoucher] = useState([]);
   // const voucherRef = useRef(voucher);
+
+  const openTabHandler = () => {
+    window.open(LINK_ADS, '_blank');
+  };
 
   const getTools = useCallback(async () => {
     try {
@@ -122,13 +127,13 @@ function HomeContent() {
           <div className="Captcha__body">
             <div className="Captcha__publication__meta">
               <div className="tags">
-                <Link to="/tools" rel="tag">
+                <Link to="/tools" onClick={openTabHandler} rel="tag">
                   TOOL NRO
                 </Link>
                 <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
                 <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a>
                 {' '}
-                <Link to="/tools" rel="tag">
+                <Link to="/tools" onClick={openTabHandler} rel="tag">
                   Xem tất cả
                 </Link>
               </div>
@@ -157,7 +162,12 @@ function HomeContent() {
                     <span className="Captcha__description" key={tool.id}>
                       <i className="fas fa-star" />
                       {' '}
-                      <Link to={`/tools/${tool.id}`} className="tools_all_link">{tool.name}</Link>
+                      {tool.price ? (
+                        <Link to={`/tools/${tool.id}`} className="tools_all_link">{tool.name}</Link>
+                      ) : (
+                        <Link to={`/tools/${tool.id}`} onClick={openTabHandler} className="tools_all_link">{tool.name}</Link>
+                      )}
+
                       {!tool.price && (
                       <span
                         className="Captcha__free"
@@ -191,6 +201,7 @@ function HomeContent() {
         <div className="content__Pr1">
           <Link
             to="/tools"
+            onClick={openTabHandler}
             title="Click để xem chi tiết"
             className="Pr1__Title"
           >
@@ -202,7 +213,7 @@ function HomeContent() {
             </div>
           </Link>
           <div className="btn-AllPr1">
-            <Link to="/tools" title="Click để xem tất cả">
+            <Link to="/tools" onClick={openTabHandler} title="Click để xem tất cả">
               <Button onClick={() => this} buttonStyle="btn--outline">
                 <p>Xem tất cả</p>
               </Button>
@@ -247,6 +258,7 @@ function HomeContent() {
         <div className="content__Pr2">
           <Link
             to="/tools"
+            onClick={openTabHandler}
             title="Click để xem chi tiết"
             className="Pr2__Title"
           >
@@ -258,7 +270,7 @@ function HomeContent() {
             </div>
           </Link>
           <div className="btn-AllPr2">
-            <Link to="/tools" title="Click để xem tất cả">
+            <Link to="/tools" onClick={openTabHandler} title="Click để xem tất cả">
               <Button onClick={() => this} buttonStyle="btn--outline">
                 <p>Xem tất cả</p>
               </Button>
@@ -272,12 +284,14 @@ function HomeContent() {
         </div>
       </div>
       <div className="blog-content">
-        <h1>
-          <span>Dũng Phạm&rsquo;</span>
-          s
-          {' '}
-          <span>Blog</span>
-        </h1>
+        <Link to="/blogs" onClick={openTabHandler}>
+          <h1>
+            <span>Dũng Phạm&rsquo;</span>
+            s
+            {' '}
+            <span>Blog</span>
+          </h1>
+        </Link>
         <BlogSlick />
       </div>
     </div>
