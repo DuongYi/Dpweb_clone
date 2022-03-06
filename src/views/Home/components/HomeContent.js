@@ -31,6 +31,10 @@ function HomeContent() {
     window.open(LINK_ADS, '_blank');
   };
 
+  const openNickMTHandler = () => {
+    window.open('https://nickmt.com/', '_blank');
+  };
+
   const getTools = useCallback(async () => {
     try {
       const response = await axios.get(`${process.env.REACT_APP_API}/api/products/getall`);
@@ -229,28 +233,37 @@ function HomeContent() {
 
       <div className="ads-container">
         <div className="axcontent">
-          <h1>
-            <span>G</span>
-            <span>i</span>
-            <span>a</span>
-            <span>n</span>
-            {' '}
-            <span>h</span>
-            <span>à</span>
-            <span>n</span>
-            <span>g</span>
-            {' '}
-            <span>A</span>
-            <span>z</span>
-            <span>n</span>
-            <span>g</span>
-            <span>o</span>
-            <span>c</span>
-            <span>r</span>
-            <span>o</span>
-            <span>n</span>
-            <span>g</span>
-          </h1>
+          <a href="https://azngocrong.vn/" onClick={openNickMTHandler} target="_top" rel="noreferrer">
+            <h1>
+              <span>G</span>
+              <span>i</span>
+              <span>a</span>
+              <span>n</span>
+              {' '}
+              <span>h</span>
+              <span>à</span>
+              <span>n</span>
+              <span>g</span>
+              {' '}
+              <span>A</span>
+              <span>z</span>
+              <span>n</span>
+              <span>g</span>
+              <span>o</span>
+              <span>c</span>
+              <span>r</span>
+              <span>o</span>
+              <span>n</span>
+              <span>g</span>
+              {' '}
+              <span>N</span>
+              <span>i</span>
+              <span>c</span>
+              <span>k</span>
+              <span>m</span>
+              <span>t</span>
+            </h1>
+          </a>
           <AdsSlick />
         </div>
       </div>
