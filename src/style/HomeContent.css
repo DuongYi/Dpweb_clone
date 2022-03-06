@@ -458,10 +458,14 @@
 
 .ads-container h1 span {
   font-family: 'BadScript';
-  animation: title--animate 3s linear infinite;
+  animation: none;
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
 }
 
-.ads-container h1 span:nth-child(1) {
+/* .ads-container h1 span:nth-child(1) {
   animation-delay: 0s;
 }
 
@@ -551,7 +555,7 @@
 
 .ads-container h1 span:nth-child(24) {
   animation-delay: 2.5s;
-}
+} */
 
 /* Blog Content */
 .blog-content {
