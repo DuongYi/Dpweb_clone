@@ -272,7 +272,7 @@ function HomeContent() {
         </div>
       </div>
       <div className="blog-content">
-        <h1 className="blog-title">
+        <h1>
           <span>Dũng Phạm&rsquo;</span>
           s
           {' '}

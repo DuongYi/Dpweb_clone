@@ -20,13 +20,13 @@ const useStyles = makeStyles(() => ({
     bottom: 0.5,
     display: 'flex',
     alignItems: 'center',
-    color: 'rgba(115,129,54,.4)',
+    color: 'rgba(255,255,255,.75)',
     zIndex: 1,
     right: -25,
     justifyContent: 'flex-end',
     transition: 'all ease 0.3s',
     '&:hover': {
-      color: 'rgba(115,129,54)',
+      color: 'rgba(255,255,255)',
     }
   },
   prevArrow: {
@@ -36,13 +36,13 @@ const useStyles = makeStyles(() => ({
     bottom: 0.5,
     display: 'flex',
     alignItems: 'center',
-    color: 'rgba(115,129,54,.4)',
+    color: 'rgba(255,255,255,.75)',
     zIndex: 1,
     left: -25,
     justifyContent: 'flex-start',
     transition: 'all ease 0.3s',
     '&:hover': {
-      color: 'rgba(115,129,54)',
+      color: 'rgba(255,255,255)',
     }
   }
 }));
@@ -82,26 +82,29 @@ function AdsSlick() {
     speed: 500,
     arrows: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 3,
+          dots: true,
         }
       },
       {
         breakpoint: 960,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
+          dots: true,
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          dots: true,
           arrows: false,
         }
       },
