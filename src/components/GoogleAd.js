@@ -19,15 +19,18 @@ class GoogleAd extends Component {
   }
 
   render() {
-    const { classNames, slot } = this.props;
+    const {
+      classNames, slot, auto, layout
+    } = this.props;
     return (
       <div className={classNames}>
         <ins
           className="adsbygoogle"
-          style={{ display: 'block' }}
+          style={{ display: 'block', margin: '0 auto' }}
           data-ad-client={googleAdId}
+          data-ad-layout={layout}
           data-ad-slot={slot}
-          data-ad-format="auto"
+          data-ad-format={auto}
           data-full-width-responsive="true"
         />
       </div>
@@ -38,12 +41,16 @@ class GoogleAd extends Component {
 GoogleAd.propTypes = {
   classNames: PropTypes.string,
   slot: PropTypes.string,
+  auto: PropTypes.string,
   timeout: PropTypes.number,
+  layout: PropTypes.string,
 };
 
 GoogleAd.defaultProps = {
   classNames: '',
   timeout: 200,
+  auto: 'auto',
+  layout: '',
 };
 
 export default GoogleAd;

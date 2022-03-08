@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
+import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
 import classes from './Blog1.module.css';
@@ -10,6 +11,10 @@ function Blog1() {
     <Blog>
       <div className={classes.boxContent}>
         <h1>Cách cài winrar về máy tính</h1>
+        <div className="container--ads">
+          <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+        </div>
+
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1</u></em></strong>
           : Đầu tiên bạn cần tải WinRAR về máy tính. Vào
@@ -24,6 +29,9 @@ function Blog1() {
           {' '}
           để tải winrar với máy 32bit
           <br />
+          <div className="container--ads">
+            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+          </div>
           <br />
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Cài đặt Winrar vào máy tính.
@@ -39,6 +47,9 @@ function Blog1() {
             dùng WinRAR để giải nén file iso. Các tùy chọn khác thì bạn để
             như mặc định. Nhấn nút “Đồng ý”.
           </p>
+          <div className="container--ads">
+            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+          </div>
           <Image src="/static/images/blog/blog1/blog1-2.png" alt="bl1-2" />
           <p>Nhấp “OK” để hoàn tất quá trình cài đặt.</p>
         </p>
@@ -46,6 +57,9 @@ function Blog1() {
         <p>
           ** Nhấp vào banner để đăng kí tài khoản và tham gia kiếm tiền với FB88 nhé
         </p>
+        <div className="container--ads">
+          <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+        </div>
       </div>
     </Blog>
 

@@ -4,6 +4,9 @@ export const SALE = {
   day: '10/10'
 };
 
+// eslint-disable-next-line no-unused-vars
+const googleAdId = 'ca-pub-1055178223861785';
+
 export const LINK_ADS = 'https://www.fb88aff.com/Track?aID=5569';
 
 export const DUMMY_BLOG = [

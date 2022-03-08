@@ -7,6 +7,7 @@ import { useSnackbar } from 'notistack';
 
 import CardInItem from 'src/components/CardTool/CardInItem';
 import Footer from 'src/components/Footer';
+import GoogleAd from 'src/components/GoogleAd';
 import LoadingAni from 'src/components/LoadingAni';
 import LoadingAniMobile from 'src/components/LoadingAniMobile';
 import Page from 'src/components/Page';
@@ -49,6 +50,10 @@ function AllToolView() {
     <Page title="Tool | Tất cả sản phẩm ">
       <div className="allTool_root">
         <Container maxWidth="xl">
+          <div className="container--ads">
+            <GoogleAd slot="1168511780" />
+            <GoogleAd slot="6995553534" />
+          </div>
           <div className="allTool-title">
             <div className="aTool-container-title">
               <div className="box-allTool">
@@ -70,6 +75,9 @@ function AllToolView() {
             {isLoading && !match && <LoadingAniMobile />}
           </Grid>
         </Container>
+      </div>
+      <div className="container--ads">
+        <GoogleAd slot="7016530990" auto="autorelaxed" />
       </div>
       <Footer />
     </Page>
