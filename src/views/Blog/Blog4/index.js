@@ -11,7 +11,7 @@ function Blog4() {
     <Blog>
       <div className={classes.boxContent}>
         <div className="container--ads">
-          <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
         </div>
         <h1>Cách tải tool/mod miễn phí trên website DungPham.com.vn</h1>
         <p style={{ lineHeight: 2 }}>
@@ -26,7 +26,7 @@ function Blog4() {
           <Image src="/static/images/blog/Blog4/1.png" alt="bl4-1" />
           <br />
           <div className="container--ads">
-            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
           </div>
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Tiến hành tải tool
@@ -34,7 +34,7 @@ function Blog4() {
             Nhấp vào tải xuống
           </p>
           <div className="container--ads">
-            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
           </div>
           <Image src="/static/images/blog/Blog4/2.png" alt="bl4-2" />
           <p>
@@ -61,7 +61,7 @@ function Blog4() {
             </b>
             <br />
             <div className="container--ads">
-              <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+              <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
             </div>
           </p>
           <Image src="/static/images/blog/Blog4/3.png" alt="bl4-3" />
@@ -76,7 +76,7 @@ function Blog4() {
           <p>Click để theo hình trên để tải về máy nhé!</p>
           <br />
           <div className="container--ads">
-            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
           </div>
           <p>Chúc bạn thành công!!</p>
           <p>
@@ -84,7 +84,7 @@ function Blog4() {
           </p>
         </p>
         <div className="container--ads">
-          <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
         </div>
       </div>
     </Blog>

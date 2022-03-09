@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 .container--ads {
-  display: flex;
+  display: block;
   width: 100%;
   height: 100%;
   justify-content: center;

@@ -23,7 +23,7 @@ class GoogleAd extends Component {
       classNames, slot, auto, layout
     } = this.props;
     return (
-      <div className={classNames}>
+      <div className={classNames} style={{ display: 'block', margin: '0 auto' }}>
         <ins
           className="adsbygoogle"
           style={{ display: 'block', margin: '0 auto' }}
@@ -48,7 +48,7 @@ GoogleAd.propTypes = {
 
 GoogleAd.defaultProps = {
   classNames: '',
-  timeout: 200,
+  timeout: 0,
   auto: 'auto',
   layout: '',
 };

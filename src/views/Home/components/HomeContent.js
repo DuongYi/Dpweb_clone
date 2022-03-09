@@ -218,7 +218,7 @@ function HomeContent() {
             </div>
           </Link>
           <div className="btn-AllPr1">
-            <Link to="/tools" onClick={openTabHandler} title="Click để xem tất cả">
+            <Link to="/tools" title="Click để xem tất cả">
               <Button onClick={() => this} buttonStyle="btn--outline">
                 <p>Xem tất cả</p>
               </Button>
@@ -284,7 +284,7 @@ function HomeContent() {
             </div>
           </Link>
           <div className="btn-AllPr2">
-            <Link to="/tools" onClick={openTabHandler} title="Click để xem tất cả">
+            <Link to="/tools" title="Click để xem tất cả">
               <Button onClick={() => this} buttonStyle="btn--outline">
                 <p>Xem tất cả</p>
               </Button>

@@ -12,7 +12,7 @@ function Blog1() {
       <div className={classes.boxContent}>
         <h1>Cách cài winrar về máy tính</h1>
         <div className="container--ads">
-          <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
         </div>
 
         <p style={{ lineHeight: 2 }}>
@@ -30,7 +30,7 @@ function Blog1() {
           để tải winrar với máy 32bit
           <br />
           <div className="container--ads">
-            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
           </div>
           <br />
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
@@ -48,7 +48,7 @@ function Blog1() {
             như mặc định. Nhấn nút “Đồng ý”.
           </p>
           <div className="container--ads">
-            <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
           </div>
           <Image src="/static/images/blog/blog1/blog1-2.png" alt="bl1-2" />
           <p>Nhấp “OK” để hoàn tất quá trình cài đặt.</p>
@@ -58,7 +58,7 @@ function Blog1() {
           ** Nhấp vào banner để đăng kí tài khoản và tham gia kiếm tiền với FB88 nhé
         </p>
         <div className="container--ads">
-          <GoogleAd slot="7618687290" auto="fluid" layout="in-article" />
+          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
         </div>
       </div>
     </Blog>
