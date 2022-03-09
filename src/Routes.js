@@ -43,6 +43,21 @@ function Routes() {
                 />
                 <Route
                   exact
+                  path="/Blog/7"
+                  component={lazy(() => import('src/views/Blog/Blog7'))}
+                />
+                <Route
+                  exact
+                  path="/Blog/6"
+                  component={lazy(() => import('src/views/Blog/Blog6'))}
+                />
+                <Route
+                  exact
+                  path="/Blog/5"
+                  component={lazy(() => import('src/views/Blog/Blog5'))}
+                />
+                <Route
+                  exact
                   path="/Blog/4"
                   component={lazy(() => import('src/views/Blog/Blog4'))}
                 />

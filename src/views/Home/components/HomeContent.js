@@ -10,7 +10,6 @@ import Button from 'src/components/Button';
 // import CardItem from 'src/components/CardItem';
 import CardInItem from 'src/components/CardTool/CardInItem';
 import GoogleAd from 'src/components/GoogleAd';
-import { LINK_ADS } from 'src/constants';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import 'src/style/HomeContent.css';
 import axios from 'src/utils/axios';
@@ -27,10 +26,6 @@ function HomeContent() {
 
   // const [voucher, setVoucher] = useState([]);
   // const voucherRef = useRef(voucher);
-
-  const openTabHandler = () => {
-    window.open(LINK_ADS, '_blank');
-  };
 
   const openNickMTHandler = () => {
     window.open('https://nickmt.com/', '_blank');
@@ -132,13 +127,13 @@ function HomeContent() {
           <div className="Captcha__body">
             <div className="Captcha__publication__meta">
               <div className="tags">
-                <Link to="/tools" onClick={openTabHandler} rel="tag">
+                <Link to="/tools" rel="tag">
                   TOOL NRO
                 </Link>
                 <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
                 <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a>
                 {' '}
-                <Link to="/tools" onClick={openTabHandler} rel="tag">
+                <Link to="/tools" rel="tag">
                   Xem tất cả
                 </Link>
               </div>
@@ -170,7 +165,7 @@ function HomeContent() {
                       {tool.price ? (
                         <Link to={`/tools/${tool.id}`} className="tools_all_link">{tool.name}</Link>
                       ) : (
-                        <Link to={`/tools/${tool.id}`} onClick={openTabHandler} className="tools_all_link">{tool.name}</Link>
+                        <Link to={`/tools/${tool.id}`} className="tools_all_link">{tool.name}</Link>
                       )}
 
                       {!tool.price && (
@@ -206,7 +201,6 @@ function HomeContent() {
         <div className="content__Pr1">
           <Link
             to="/tools"
-            onClick={openTabHandler}
             title="Click để xem chi tiết"
             className="Pr1__Title"
           >
@@ -272,7 +266,6 @@ function HomeContent() {
         <div className="content__Pr2">
           <Link
             to="/tools"
-            onClick={openTabHandler}
             title="Click để xem chi tiết"
             className="Pr2__Title"
           >
@@ -301,7 +294,7 @@ function HomeContent() {
         <GoogleAd slot="7016530990" auto="autorelaxed" />
       </div>
       <div className="blog-content">
-        <Link to="/blogs" onClick={openTabHandler}>
+        <Link to="/blogs">
           <h1>
             <span>Dũng Phạm&rsquo;</span>
             s

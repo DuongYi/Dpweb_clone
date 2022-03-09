@@ -79,9 +79,6 @@ function Blog4() {
             <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
           </div>
           <p>Chúc bạn thành công!!</p>
-          <p>
-            ** Nhấp vào banner để đăng kí tài khoản và tham gia kiếm tiền với FB88 nhé
-          </p>
         </p>
         <div className="container--ads">
           <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />

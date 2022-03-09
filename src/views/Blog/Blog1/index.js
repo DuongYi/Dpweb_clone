@@ -54,9 +54,6 @@ function Blog1() {
           <p>Nhấp “OK” để hoàn tất quá trình cài đặt.</p>
         </p>
         <p>Chúc bạn thành công!!</p>
-        <p>
-          ** Nhấp vào banner để đăng kí tài khoản và tham gia kiếm tiền với FB88 nhé
-        </p>
         <div className="container--ads">
           <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
         </div>

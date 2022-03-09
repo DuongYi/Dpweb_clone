@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import Button from 'src/components/Button';
-import { LINK_ADS, SALE } from 'src/constants';
+import { SALE } from 'src/constants';
 
 function getMoneys(money) {
   let result = '';
@@ -20,15 +20,11 @@ function getMoneys(money) {
 
 function CardInItem({ tool }) {
   // eslint-disable-next-line no-unused-vars
-  const openTabHandler = () => {
-    window.open(LINK_ADS, '_blank');
-  };
 
   return (
     <div className="cardInI__container">
       <Link
         to={`/tools/${tool.id}`}
-        onClick={!tool.price ? openTabHandler : null}
         style={{ textDecoration: 'none' }}
       >
         <div className="cardInI">
