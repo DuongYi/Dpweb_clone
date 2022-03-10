@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
+import DivAds from 'src/components/DivAds';
 import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
@@ -10,9 +11,9 @@ function Blog4() {
   return (
     <Blog>
       <div className={classes.boxContent}>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="6995553534" />
+        </DivAds>
         <h1>Cách tải tool/mod miễn phí trên website DungPham.com.vn</h1>
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1</u></em></strong>
@@ -25,17 +26,17 @@ function Blog4() {
           <p>Hoặc nhấn vào Tool trên thanh điều hướng rồi kéo xuống cuối cùng</p>
           <Image src="/static/images/blog/Blog4/1.png" alt="bl4-1" />
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="6995553534" />
+          </DivAds>
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Tiến hành tải tool
           <p>
             Nhấp vào tải xuống
           </p>
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="6995553534" />
+          </DivAds>
           <Image src="/static/images/blog/Blog4/2.png" alt="bl4-2" />
           <p>
             ** Một cửa sổ Dialog sẽ hiện lên. Click Tải Tool/Mod để tải về
@@ -60,9 +61,9 @@ function Blog4() {
               để test ngay nhân phẩm của mình nhé!!
             </b>
             <br />
-            <div className="container--ads">
-              <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-            </div>
+            <DivAds>
+              <GoogleAd slot="6995553534" />
+            </DivAds>
           </p>
           <Image src="/static/images/blog/Blog4/3.png" alt="bl4-3" />
           <strong><em><u>&nbsp;Bước 3:</u></em></strong>
@@ -75,14 +76,14 @@ function Blog4() {
           <Image src="/static/images/blog/Blog4/4.png" alt="bl3-3" />
           <p>Click để theo hình trên để tải về máy nhé!</p>
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="6995553534" />
+          </DivAds>
           <p>Chúc bạn thành công!!</p>
         </p>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="6995553534" />
+        </DivAds>
       </div>
     </Blog>
 

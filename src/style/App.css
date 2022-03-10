@@ -56,7 +56,3 @@ html::-webkit-scrollbar-thumb:active {
 .slick-dots li button:before {
   color:rgb(255, 255, 255, .7) !important;
 }
-
-.container--ads {
-  display: flex;
-}

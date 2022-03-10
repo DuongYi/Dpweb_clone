@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
+import DivAds from 'src/components/DivAds';
 import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
@@ -10,9 +11,9 @@ function Blog6() {
   return (
     <Blog>
       <div className={classes.boxContent}>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="4202773198" />
+        </DivAds>
         <h1>Cách cài đặt Net4.8 (series tự làm mod cơ bản)</h1>
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1 </u></em></strong>
@@ -20,9 +21,9 @@ function Blog6() {
           (Đối với những anh em đã cài dot net từ trước, thì sẽ check xem nếu
           dot net lớn hơn 4.8 thì không phải cài nữa, còn không thì ae tiếp tục ở bước 2)
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <h5>Cách tra phiên bản dotnet đã cài</h5>
           <p>
             Gõ
@@ -51,9 +52,9 @@ function Blog6() {
             {' '}
           </h5>
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <br />
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Hướng dẫn cài đặt Net4.8
@@ -69,15 +70,15 @@ function Blog6() {
             {' '}
             <a style={{ textDecoration: 'underline', color: 'yellow' }} href="https://www.youtube.com/watch?v=gEAu0bVcwPg">Cách cài net4.8</a>
           </p>
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <p>Chúc bạn thành công!!</p>
           <h5>Tiếp theo chúng ta sẽ chuyển qua cách cài dnspy ở blog tiếp theo, ae đón đọc nhé!</h5>
         </p>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="4202773198" />
+        </DivAds>
       </div>
     </Blog>
 

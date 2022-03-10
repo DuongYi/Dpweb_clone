@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Blog from 'src/components/Blog';
+import DivAds from 'src/components/DivAds';
 import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
@@ -12,9 +13,9 @@ function Blog7() {
   return (
     <Blog>
       <div className={classes.boxContent}>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="4202773198" />
+        </DivAds>
         <h1>Cách cài đặt dnspy (series tự làm mod cơ bản)</h1>
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1 </u></em></strong>
@@ -23,9 +24,9 @@ function Blog7() {
             {' '}
             <a style={{ textDecoration: 'underline', color: 'yellow' }} href="https://github.com/dnSpy/dnSpy">https://github.com/dnSpy/dnSpy</a>
           </p>
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <p>sau đó bạn sẽ đến trang này: </p>
           <br />
           <Image src="/static/images/blog/Blog7/1.png" alt="bl7-1" />
@@ -41,9 +42,9 @@ function Blog7() {
           <br />
           <Image src="/static/images/blog/Blog7/3.png" alt="bl7-3" />
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <br />
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Hướng dẫn cài đặt dnspy
@@ -62,18 +63,18 @@ function Blog7() {
           <br />
           <Image src="/static/images/blog/Blog7/4.png" alt="bl7-4" />
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <p>Chúc bạn thành công!!</p>
           <h4>
             Fllow blog tiếp theo để tiếp tục series này nhé, blog sẽ được ra vào hôm sau!
             Hẹn gặp lại!
           </h4>
         </p>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="4202773198" />
+        </DivAds>
       </div>
     </Blog>
 

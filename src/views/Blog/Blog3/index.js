@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
+import DivAds from 'src/components/DivAds';
 import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
@@ -12,18 +13,18 @@ function Blog3() {
       <div className={classes.boxContent}>
         <h1>Cách nén file</h1>
         <p style={{ lineHeight: 2 }}>
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <strong><em><u>&nbsp;Bước 1</u></em></strong>
           : Đầu tiên bạn chọn thư mục mà bạn muốn nén file.
           Sau đó click chuột phải và chọn Add to archive.
           <Image src="/static/images/blog/blog3/1.png" alt="bl3-1" />
           <p>** Có thể chọn luôn Add to .rar để tạo luôn file nén đuôi .rar </p>
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Tiến hành nén file
           <p>
@@ -44,9 +45,9 @@ function Blog3() {
           </p>
           <Image src="/static/images/blog/blog3/3.png" alt="bl3-3" />
           <p>Chúc bạn thành công!!</p>
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
         </p>
       </div>
     </Blog>

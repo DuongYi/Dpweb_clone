@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
+import DivAds from 'src/components/DivAds';
 import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
@@ -10,9 +11,9 @@ function Blog5() {
   return (
     <Blog>
       <div className={classes.boxContent}>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="4202773198" />
+        </DivAds>
         <h1>Cách tắt Window Defender để cài tool</h1>
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1</u></em></strong>
@@ -25,9 +26,9 @@ function Blog5() {
           <br />
           <Image src="/static/images/blog/Blog5/2.png" alt="bl5-2" />
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Một cửa sổ như trong hình bên dưới sẽ hiện lên. bạn nhấn vào Virus
           & threat protection.
@@ -38,9 +39,9 @@ function Blog5() {
           <br />
           <Image src="/static/images/blog/Blog5/4.png" alt="bl5-4" />
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <strong><em><u>&nbsp;Bước 3</u></em></strong>
           <p>
             : Sau đó cửa sổ bên dưới sẽ hiện lên. Thường thì chỉ tắt mục đầu
@@ -49,17 +50,17 @@ function Blog5() {
           <br />
           <Image src="/static/images/blog/Blog5/5.png" alt="bl5-5" />
           <br />
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
-          <div className="container--ads">
-            <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-          </div>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
+          <DivAds>
+            <GoogleAd slot="4202773198" />
+          </DivAds>
           <p>Chúc bạn thành công!!</p>
         </p>
-        <div className="container--ads">
-          <GoogleAd slot="6995553534" auto="fluid" layout="in-article" />
-        </div>
+        <DivAds>
+          <GoogleAd slot="4202773198" />
+        </DivAds>
       </div>
     </Blog>
 

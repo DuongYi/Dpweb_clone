@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Footer from 'src/components/Footer';
 import { LINK_ADS } from 'src/constants';
 
+import DivAds from '../DivAds';
 import GoogleAd from '../GoogleAd';
 import classes from './Blog.module.css';
 
@@ -18,16 +19,16 @@ function Blog({ children }) {
               <img src="/static/images/banner/qc1.gif" alt="qc" width="100%" />
               <img src="/static/images/banner/qc3.gif" alt="qc" width="100%" />
             </a>
-            <div className="container--ads">
+            <DivAds>
               <GoogleAd slot="1168511780" />
               <GoogleAd slot="6995553534" />
-            </div>
+            </DivAds>
           </div>
           {children}
           <div className={classes.boxAds}>
-            <div className="container--ads">
+            <DivAds>
               <GoogleAd slot="7016530990" auto="autorelaxed" />
-            </div>
+            </DivAds>
           </div>
         </div>
         <div className={classes.container_adsright}>
@@ -36,9 +37,9 @@ function Blog({ children }) {
           </a>
         </div>
       </div>
-      <div className="container--ads">
+      <DivAds>
         <GoogleAd slot="7016530990" auto="autorelaxed" />
-      </div>
+      </DivAds>
       <Footer />
     </div>
   );
