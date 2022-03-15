@@ -1,8 +1,6 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
-import DivAds from 'src/components/DivAds';
-import GoogleAd from 'src/components/GoogleAd';
 import Image from 'src/components/Image';
 
 import classes from './Blog5.module.css';
@@ -11,9 +9,7 @@ function Blog5() {
   return (
     <Blog>
       <div className={classes.boxContent}>
-        <DivAds>
-          <GoogleAd slot="4202773198" />
-        </DivAds>
+
         <h1>Cách tắt Window Defender để cài tool</h1>
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1</u></em></strong>
@@ -26,9 +22,7 @@ function Blog5() {
           <br />
           <Image src="/static/images/blog/Blog5/2.png" alt="bl5-2" />
           <br />
-          <DivAds>
-            <GoogleAd slot="4202773198" />
-          </DivAds>
+
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Một cửa sổ như trong hình bên dưới sẽ hiện lên. bạn nhấn vào Virus
           & threat protection.
@@ -39,9 +33,7 @@ function Blog5() {
           <br />
           <Image src="/static/images/blog/Blog5/4.png" alt="bl5-4" />
           <br />
-          <DivAds>
-            <GoogleAd slot="4202773198" />
-          </DivAds>
+
           <strong><em><u>&nbsp;Bước 3</u></em></strong>
           <p>
             : Sau đó cửa sổ bên dưới sẽ hiện lên. Thường thì chỉ tắt mục đầu
@@ -50,17 +42,10 @@ function Blog5() {
           <br />
           <Image src="/static/images/blog/Blog5/5.png" alt="bl5-5" />
           <br />
-          <DivAds>
-            <GoogleAd slot="4202773198" />
-          </DivAds>
-          <DivAds>
-            <GoogleAd slot="4202773198" />
-          </DivAds>
+
           <p>Chúc bạn thành công!!</p>
         </p>
-        <DivAds>
-          <GoogleAd slot="4202773198" />
-        </DivAds>
+
       </div>
     </Blog>
 

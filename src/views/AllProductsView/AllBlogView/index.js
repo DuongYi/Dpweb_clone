@@ -6,9 +6,7 @@ import { makeStyles } from '@mui/styles';
 import 'src/style/HomeContent.css';
 import 'src/style/AllBlogView.css';
 import CardInfo from 'src/components/CardInfo';
-import DivAds from 'src/components/DivAds';
 import Footer from 'src/components/Footer';
-import GoogleAd from 'src/components/GoogleAd';
 import Page from 'src/components/Page';
 import { DUMMY_BLOG } from 'src/constants';
 
@@ -33,10 +31,6 @@ function AllBlogView() {
     <Page title="Tool | Tất cả sản phẩm ">
       <div className={classes.root}>
         <Container maxWidth="xl">
-          <DivAds>
-            <GoogleAd slot="6995553534" />
-            <GoogleAd slot="2202709083" />
-          </DivAds>
           <div className="allBlog-title">
             <div className="aBlog-container-title">
               <div className="box-allBlog">
@@ -54,9 +48,6 @@ function AllBlogView() {
           </Grid>
         </Container>
       </div>
-      <DivAds>
-        <GoogleAd slot="7016530990" auto="autorelaxed" />
-      </DivAds>
       <Footer />
     </Page>
   );

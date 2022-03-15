@@ -9,7 +9,6 @@ import Button from 'src/components/Button';
 // import CardInfo from 'src/components/CardInfo';
 // import CardItem from 'src/components/CardItem';
 import CardInItem from 'src/components/CardTool/CardInItem';
-import GoogleAd from 'src/components/GoogleAd';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import 'src/style/HomeContent.css';
 import axios from 'src/utils/axios';
@@ -289,9 +288,6 @@ function HomeContent() {
             ))}
           </div>
         </div>
-      </div>
-      <div className="content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <GoogleAd slot="7016530990" auto="autorelaxed" />
       </div>
       <div className="blog-content">
         <Link to="/blogs">

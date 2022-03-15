@@ -1,19 +1,15 @@
 import React from 'react';
 
 import Blog from 'src/components/Blog';
-import DivAds from 'src/components/DivAds';
 import Image from 'src/components/Image';
 
-import GoogleAd from '../../../components/GoogleAd';
 import classes from './Blog2.module.css';
 
 function Blog2() {
   return (
     <Blog>
       <div className={classes.boxContent}>
-        <DivAds>
-          <GoogleAd slot="4202773198" />
-        </DivAds>
+
         <h1>Cách giải nén file</h1>
         <p style={{ lineHeight: 2 }}>
           <strong><em><u>&nbsp;Bước 1</u></em></strong>
@@ -22,9 +18,7 @@ function Blog2() {
           <Image src="/static/images/blog/blog2/1.png" alt="bl2-1" />
           <br />
           <br />
-          <DivAds>
-            <GoogleAd slot="4202773198" />
-          </DivAds>
+
           <strong><em><u>&nbsp;Bước 2</u></em></strong>
           : Tiến hành giải nén
           <p>
@@ -39,9 +33,7 @@ function Blog2() {
           </p>
           <Image src="/static/images/blog/blog2/3.png" alt="bl2-3" />
           <p>Chúc bạn thành công!!</p>
-          <DivAds>
-            <GoogleAd slot="4202773198" />
-          </DivAds>
+
         </p>
       </div>
     </Blog>

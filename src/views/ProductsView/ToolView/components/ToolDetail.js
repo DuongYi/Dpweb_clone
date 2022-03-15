@@ -13,7 +13,6 @@ import Skeleton from '@material-ui/lab/Skeleton';
 import Rating from '@mui/material/Rating';
 import PropTypes from 'prop-types';
 
-import GoogleAd from 'src/components/GoogleAd';
 import { SALE } from 'src/constants';
 
 import moduleclasses from './ToolDetail.module.css';
@@ -274,19 +273,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 10.5,
     },
   },
-  [theme.breakpoints.up('xs')]: {
-    mobile_ads: {
-      display: 'inline-block',
-      maxWidth: '360px',
-      width: '100%',
-      height: '80px',
-    }
-  },
-  [theme.breakpoints.up('md')]: {
-    mobile_ads: {
-      display: 'none',
-    }
-  }
 }));
 
 function getMoneys(money) {
@@ -548,7 +534,6 @@ function ToolDetail({ tool }) {
                 </a>
               </span>
             ) : <div style={{ display: 'none' }} />}
-          <GoogleAd className={classes.mobile_ads} auto="" slot="6720005768" />
         </div>
       </div>
       <Dialog

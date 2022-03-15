@@ -6,9 +6,7 @@ import { Container, Grid } from '@mui/material';
 import { useSnackbar } from 'notistack';
 
 import CardInItem from 'src/components/CardTool/CardInItem';
-import DivAds from 'src/components/DivAds';
 import Footer from 'src/components/Footer';
-import GoogleAd from 'src/components/GoogleAd';
 import LoadingAni from 'src/components/LoadingAni';
 import LoadingAniMobile from 'src/components/LoadingAniMobile';
 import Page from 'src/components/Page';
@@ -51,10 +49,7 @@ function AllToolView() {
     <Page title="Tool | Tất cả sản phẩm ">
       <div className="allTool_root">
         <Container maxWidth="xl">
-          <DivAds>
-            <GoogleAd slot="1168511780" />
-            <GoogleAd slot="6995553534" />
-          </DivAds>
+
           <div className="allTool-title">
             <div className="aTool-container-title">
               <div className="box-allTool">
@@ -77,9 +72,14 @@ function AllToolView() {
           </Grid>
         </Container>
       </div>
-      <DivAds>
-        <GoogleAd slot="7016530990" auto="autorelaxed" />
-      </DivAds>
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-1055178223861785"
+        data-ad-slot="4202773198"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
       <Footer />
     </Page>
   );
