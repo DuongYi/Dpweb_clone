@@ -80,7 +80,7 @@ function Navbar() {
                 Blog
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 href="https://nickmt.com/"
                 target="_blank"
@@ -101,7 +101,7 @@ function Navbar() {
               >
                 Thanh lý Nick
               </a>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
               <Link
                 to="/tools"

@@ -28,9 +28,6 @@ function Footer() {
               <li>
                 <Link to="/">Dịch vụ</Link>
               </li>
-              <li>
-                <Link to="/">Điều khoản</Link>
-              </li>
             </ul>
           </div>
           <div className="footer__case">
@@ -42,11 +39,14 @@ function Footer() {
                 <Link to="/blogs">Blog</Link>
               </li>
               <li>
+                <Link to="/">Điều khoản</Link>
+              </li>
+              {/* <li>
                 <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
               </li>
               <li>
                 <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer__case">

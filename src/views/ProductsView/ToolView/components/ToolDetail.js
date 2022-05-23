@@ -504,7 +504,7 @@ function ToolDetail({ tool }) {
               )}
           </Grid>
 
-          {!(tool.price)
+          {/* {!(tool.price)
             ? (
               <span className={moduleclasses.webads}>
                 <i className="fas fa-fan" />
@@ -533,7 +533,7 @@ function ToolDetail({ tool }) {
                   nickmt.com
                 </a>
               </span>
-            ) : <div style={{ display: 'none' }} />}
+            ) : <div style={{ display: 'none' }} />} */}
         </div>
       </div>
       <Dialog
@@ -566,14 +566,14 @@ function ToolDetail({ tool }) {
         <div
           className={moduleclasses.dialog_ads}
         >
-          <h1>AZNGOCRONG.VN, NICKMT.COM</h1>
+          <h1>DUNGPHAM.COM.VN</h1>
           <h2>Uy tín, nhanh gọn, chất lượng tuyệt đối</h2>
-          <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">
+          {/* <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">
             <img src="https://azngocrong.vn/image/nhap-nick-2021.gif" alt="Banner1" width="100%" />
           </a>
           <a href="https://nickmt.com/" target="_blank" rel="noreferrer">
             <img src="https://nickmt.com/image/luckywheel/b%C3%A1n-nick-mt-.gif" width="100%" alt="Banner2" />
-          </a>
+          </a> */}
           <a
             className={moduleclasses.btnads}
             href={tool.link}

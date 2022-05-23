@@ -13,7 +13,7 @@ import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import 'src/style/HomeContent.css';
 import axios from 'src/utils/axios';
 
-import AdsSlick from './AdsSlick';
+// import AdsSlick from './AdsSlick';
 import BlogSlick from './BlogSlick';
 
 function HomeContent() {
@@ -26,9 +26,9 @@ function HomeContent() {
   // const [voucher, setVoucher] = useState([]);
   // const voucherRef = useRef(voucher);
 
-  const openNickMTHandler = () => {
-    window.open('https://nickmt.com/', '_blank');
-  };
+  // const openNickMTHandler = () => {
+  //   window.open('https://nickmt.com/', '_blank');
+  // };
 
   const getTools = useCallback(async () => {
     try {
@@ -129,9 +129,8 @@ function HomeContent() {
                 <Link to="/tools" rel="tag">
                   TOOL NRO
                 </Link>
-                <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
-                <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a>
-                {' '}
+                {/* <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
+                <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a> */}
                 <Link to="/tools" rel="tag">
                   Xem tất cả
                 </Link>
@@ -225,7 +224,7 @@ function HomeContent() {
         </div>
       </div>
 
-      <div className="ads-container">
+      {/* <div className="ads-container">
         <div className="axcontent">
           <a href="https://azngocrong.vn/" onClick={openNickMTHandler} target="_top" rel="noreferrer">
             <h1>
@@ -260,7 +259,7 @@ function HomeContent() {
           </a>
           <AdsSlick />
         </div>
-      </div>
+      </div> */}
       <div className="content">
         <div className="content__Pr2">
           <Link

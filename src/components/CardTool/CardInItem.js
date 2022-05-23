@@ -19,8 +19,6 @@ function getMoneys(money) {
 }
 
 function CardInItem({ tool }) {
-  // eslint-disable-next-line no-unused-vars
-
   return (
     <div className="cardInI__container">
       <Link
@@ -29,7 +27,7 @@ function CardInItem({ tool }) {
       >
         <div className="cardInI">
           <div className="div__cardInI__image">
-            <img className="cardInI__image" loading="lazy" src={`static/images/${tool.image}.png`} alt={tool.image} />
+            <img className="cardInI__image" loading="lazy" src={`static/images/${tool.image}.jpg`} alt={tool.image} />
           </div>
           {(SALE.sale !== 1 && tool.price && tool.name !== 'AutoPro_DP 200')
             ? (
