@@ -47,14 +47,14 @@ export const DUMMY_BLOG = [
   },
   {
     id: 2,
-    image: 'https://i.ytimg.com/vi/cPF-xlsW9N8/hqdefault.jpg',
+    image: '/static/images/blog/blog2/image.jpg',
     title: 'Cách giải nén file',
     writer: 'Dương Vũ',
     daywrite: '05/03/2022',
   },
   {
     id: 3,
-    image: 'https://www.vietsunshine.com.vn/wp-content/uploads/2019/02/C%E1%BA%A3nh-b%C3%A1o-L%E1%BB%97-h%E1%BB%95ng-nghi%C3%AAm-tr%E1%BB%8Dng-c%E1%BB%A7a-WinRaR-%E1%BA%A3nh-h%C6%B0%E1%BB%9Fng-t%E1%BB%9Bi-h%C3%A0ng-100-tri%E1%BB%87u-ng%C6%B0%E1%BB%9Di-d%C3%B9ng.jpg',
+    image: '/static/images/blog/blog3/image.jpg',
     title: 'Cách nén file',
     writer: 'Dương Vũ',
     daywrite: '06/03/2022',

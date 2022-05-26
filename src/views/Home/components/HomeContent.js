@@ -113,7 +113,7 @@ function HomeContent() {
               <img
                 width="1200"
                 height="600"
-                src="/static/images/tool.png"
+                src="/static/images/tool.jpg"
                 alt=""
                 className="Captcha__bg"
                 data-lazy-loaded="1"

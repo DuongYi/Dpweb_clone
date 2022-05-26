@@ -302,7 +302,7 @@ function ToolDetail({ tool }) {
       className={classes.root}
       key={tool.id}
       style={{
-        backgroundImage: 'url(https://img4.thuthuatphanmem.vn/uploads/2020/05/07/hinh-nen-dragon-ball-cuc-ky-dep_111004288.jpg)',
+        backgroundImage: 'url(/static/images/prod-bg.webp)',
       }}
     >
       <div className={classes.blurRoot}>

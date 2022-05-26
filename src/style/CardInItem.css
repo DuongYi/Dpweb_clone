@@ -41,6 +41,7 @@
   z-index: 1;
   width: 100%;
   height: 45%;
+  overflow: hidden;
 }
 
 .cardInI__container .cardInI:hover  .div__cardInI__image {
@@ -50,8 +51,8 @@
 
 .cardInI__container .cardInI .div__cardInI__image .cardInI__image {
   width: 100%;
-  height: 100%;
-  transition: 0.5s;
+  height: auto;
+  min-height: -webkit-fill-available;
 }
 
 .cardInI__container .div__cardInI__saleoff {

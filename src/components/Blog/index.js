@@ -13,10 +13,19 @@ function Blog({ children }) {
       <div className={classes.root}>
         <div className={classes.container}>
           <div className={classes.boxAds}>
-            <a href={LINK_ADS} target="_blank" rel="noreferrer">
+            {/* <a href={LINK_ADS} target="_blank" rel="noreferrer">
               <img src="/static/images/banner/qc1.gif" alt="qc" width="100%" />
               <img src="/static/images/banner/qc3.gif" alt="qc" width="100%" />
-            </a>
+            </a> */}
+            <div className={classes['div-ads']}>
+              <div className={classes['module-inside']}>
+                <p>Liên hệ quảng cáo</p>
+                <a href="https://www.facebook.com/VSsYii193">
+                  <h2>VSsYii</h2>
+                </a>
+
+              </div>
+            </div>
           </div>
           {children}
           <div className={classes.boxAds} />

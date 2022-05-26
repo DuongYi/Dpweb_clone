@@ -27,7 +27,7 @@ function CardInItem({ tool }) {
       >
         <div className="cardInI">
           <div className="div__cardInI__image">
-            <img className="cardInI__image" loading="lazy" src={`static/images/${tool.image}.jpg`} alt={tool.image} />
+            <img className="cardInI__image" loading="lazy" src={tool.image} alt={tool.image} />
           </div>
           {(SALE.sale !== 1 && tool.price && tool.name !== 'AutoPro_DP 200')
             ? (
