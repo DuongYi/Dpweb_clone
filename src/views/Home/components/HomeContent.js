@@ -113,12 +113,12 @@ function HomeContent() {
               <img
                 width="1200"
                 height="600"
-                src="/static/images/tool.jpg"
+                src="/static/images/kame.jpg"
                 alt=""
                 className="Captcha__bg"
                 data-lazy-loaded="1"
                 sizes="(min-width: 735px) 864px, 96vw"
-                loading="eager"
+                loading="lazy"
               />
             </a>
           </div>
@@ -129,8 +129,8 @@ function HomeContent() {
                 <Link to="/tools" rel="tag">
                   TOOL NRO
                 </Link>
-                {/* <a href="https://nickmt.com/" target="_blank" rel="noreferrer">Shop nick</a>
-                <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a> */}
+                <a href="https://captchadp.com.vn/" target="_blank" rel="noreferrer">CAPTCHA</a>
+                {/* <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">Thanh lý nick</a> */}
                 <Link to="/tools" rel="tag">
                   Xem tất cả
                 </Link>

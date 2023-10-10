@@ -1,11 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 
-import { useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
-
-import Button from '../Button';
-import Account from './Account';
 
 import 'src/style/Navbar.css';
 
@@ -72,6 +68,17 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <a
+                href="https://captchadp.com.vn/"
+                target="_blank"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                rel="noreferrer"
+              >
+                Captcha
+              </a>
+            </li>
+            <li className="nav-item">
               <Link
                 to="/blogs"
                 className="nav-links"
@@ -81,17 +88,6 @@ function Navbar() {
               </Link>
             </li>
             {/* <li className="nav-item">
-              <a
-                href="https://nickmt.com/"
-                target="_blank"
-                className="nav-links"
-                onClick={closeMobileMenu}
-                rel="noreferrer"
-              >
-                Shop Nick
-              </a>
-            </li>
-            <li className="nav-item">
               <a
                 href="https://azngocrong.vn/"
                 target="_blank"

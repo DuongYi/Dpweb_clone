@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 export const SALE = {
   sale: 1,
-  day: '10/10'
+  day: '12/02 - 16/02'
 };
 
 // eslint-disable-next-line no-unused-vars

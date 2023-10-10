@@ -1,21 +1,35 @@
+/* eslint-disable max-len */
 import React from 'react';
 
+import { useMeasure } from 'react-use';
+
+import { BlurImg } from 'src/components/BlurImage';
 import Button from 'src/components/Button';
 import 'src/style/TopBackground.css';
 
 function TopBackground() {
   const arrBg = ['static/images/allkda.jpg', 'static/images/akali.jpg', 'static/images/ahri.jpg', 'static/images/kaisa.jpg', 'static/images/evelynn.jpg', 'static/images/kaisa1.jpg'];
+
   const index = Math.floor(Math.random() * arrBg.length);
+
+  const [{ width, height }] = useMeasure();
 
   const handleBuy = () => {};
 
-  // eslint-disable-next-line no-unused-vars
   const bg = arrBg[index];
 
   return (
     <>
       <div className="hero-container">
-        <img className="topbg-background" src="static/images/allkda.jpg" alt="bg" />
+        <BlurImg
+          blurhash="L9C6ohtR9uMx00NGx]-;4URjnit7"
+          className="topbg-background"
+          src={bg}
+          alt="bg"
+          width={width}
+          height={height}
+          punch={1}
+        />
         <h1>
           Chào mừng đến với
           {' '}

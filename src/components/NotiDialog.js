@@ -13,6 +13,8 @@ import {
 import { styled } from '@mui/material/styles';
 import { makeStyles } from '@mui/styles';
 import PropTypes from 'prop-types';
+
+import { SALE } from 'src/constants';
 import 'src/style/NotiDialog.css';
 
 const useStyles = makeStyles(() => ({
@@ -99,11 +101,44 @@ function NotiDialog() {
                 </b>
               </Typography>
             )} */}
+
+          {SALE.sale !== 1 && (
+          <Typography gutterBottom>
+            <i className="far fa-hand-point-right">
+              <b style={{ color: 'red', lineHeight: '1.3rem' }}>
+                {' '}
+                THÔNG BÁO: Từ ngày 07/11 - 08/11 giảm giá tất cả các tool 25% trên hệ thống web
+                {' '}
+                <b>Dungpham.com.vn</b>
+                {' '}
+                (trừ AutoPro_DP 206)
+              </b>
+              {' '}
+            </i>
+          </Typography>
+          )}
+
+          <a href="https://rongthanonline.vn/download" style={{ textDecoration: 'none', color: 'red' }}>
+            <Typography gutterBottom>
+              <i className="far fa-hand-point-right">
+                <b style={{ color: 'red' }}>
+                  {' '}
+                  <b>Rồng thần online - Game nhập vai ngọc rồng cực đỉnh</b>
+                  {' '}
+                </b>
+              </i>
+              {' '}
+              <b style={{ color: 'red!important' }}>
+                [TẢI NGAY]
+              </b>
+            </Typography>
+          </a>
+
           <Typography gutterBottom>
             <i className="far fa-hand-point-right">
               <b style={{ color: 'red' }}>
                 {' '}
-                LƯU Ý khi mua tool trên
+                Lưu ý khi mua tool trên
                 {' '}
                 <b>Dungpham.com.vn</b>
               </b>

@@ -19,9 +19,11 @@ function Blog({ children }) {
             </a> */}
             <div className={classes['div-ads']}>
               <div className={classes['module-inside']}>
-                <p>Liên hệ quảng cáo</p>
-                <a href="https://www.facebook.com/VSsYii193">
-                  <h2>VSsYii</h2>
+                <p>Rồng thần Online</p>
+                <a href="">
+                  <h2>
+                    Become a warrior
+                  </h2>
                 </a>
 
               </div>

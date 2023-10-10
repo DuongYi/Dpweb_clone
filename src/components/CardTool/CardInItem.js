@@ -3,7 +3,9 @@ import React from 'react';
 import 'src/style/CardInItem.css';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { useMeasure } from 'react-use';
 
+import { BlurImg } from 'src/components/BlurImage';
 import Button from 'src/components/Button';
 import { SALE } from 'src/constants';
 
@@ -19,6 +21,8 @@ function getMoneys(money) {
 }
 
 function CardInItem({ tool }) {
+  const [{ width, height }] = useMeasure();
+
   return (
     <div className="cardInI__container">
       <Link
@@ -27,7 +31,16 @@ function CardInItem({ tool }) {
       >
         <div className="cardInI">
           <div className="div__cardInI__image">
-            <img className="cardInI__image" loading="lazy" src={tool.image} alt={tool.image} />
+            <BlurImg
+              blurhash="L9C6ohtR9uMx00NGx]-;4URjnit7"
+              className="cardInI__image"
+              src={tool.image}
+              alt="bg"
+              width={width}
+              height={height}
+              punch={1}
+            />
+            {/* <img className="cardInI__image" loading="lazy" src={tool.image} alt={tool.id} /> */}
           </div>
           {(SALE.sale !== 1 && tool.price && tool.name !== 'AutoPro_DP 200')
             ? (

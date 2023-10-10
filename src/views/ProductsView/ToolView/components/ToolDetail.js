@@ -293,7 +293,7 @@ function ToolDetail({ tool }) {
   const [adsDialogOpen, setAdsDialogOpen] = useState(false);
 
   const openTabHandler = () => {
-    window.open('https://azngocrong.vn/', '_blank');
+    window.open('https://rongthanonline.vn/', '_blank');
     window.open(tool.link, '_parent');
   };
 
@@ -566,13 +566,17 @@ function ToolDetail({ tool }) {
         <div
           className={moduleclasses.dialog_ads}
         >
-          <h1>DUNGPHAM.COM.VN</h1>
-          <h2>Uy tín, nhanh gọn, chất lượng tuyệt đối</h2>
-          {/* <a href="https://azngocrong.vn/" target="_blank" rel="noreferrer">
-            <img src="https://azngocrong.vn/image/nhap-nick-2021.gif" alt="Banner1" width="100%" />
+          <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
+            <h1>RONGTHANONLINE.VN</h1>
           </a>
-          <a href="https://nickmt.com/" target="_blank" rel="noreferrer">
-            <img src="https://nickmt.com/image/luckywheel/b%C3%A1n-nick-mt-.gif" width="100%" alt="Banner2" />
+          <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
+            <h2>Chơi hết mình, PK tới bến </h2>
+          </a>
+          <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
+            <img src="https://i.imgur.com/lAmF8no.png" alt="Banner1" width="100%" />
+          </a>
+          {/* <a href="https://nickmt.com/" target="_blank" rel="noreferrer">
+            <img src="https://i.imgur.com/lAmF8no.png" width="100%" alt="Banner2" />
           </a> */}
           <a
             className={moduleclasses.btnads}

@@ -14,8 +14,6 @@ function LoadingScreen() {
             height="10em"
           >
             <path
-              ng-attr-d="{{config.pathCmd}}"
-              ng-attr-fill="{{config.color}}"
               stroke="none"
               d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50"
               fill="#51CACC"
