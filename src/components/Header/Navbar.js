@@ -69,6 +69,17 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
+                href="https://service.dungpham.com.vn/"
+                target="_blank"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                rel="noreferrer"
+              >
+                Dịch vụ
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
                 href="https://captchadp.com.vn/"
                 target="_blank"
                 className="nav-links"

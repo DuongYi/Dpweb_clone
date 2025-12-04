@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, {
   useEffect, useState
 } from 'react';
@@ -118,7 +119,12 @@ function NotiDialog() {
           </Typography>
           )}
 
-          <a href="https://rongthanonline.vn/download" style={{ textDecoration: 'none', color: 'red' }}>
+          {/* <a
+            href="https://rongthanonline.vn/download"
+            style={{
+              textDecoration: 'none', color: 'red'
+            }}
+          >
             <Typography gutterBottom>
               <i className="far fa-hand-point-right">
                 <b style={{ color: 'red' }}>
@@ -132,7 +138,7 @@ function NotiDialog() {
                 [TẢI NGAY]
               </b>
             </Typography>
-          </a>
+          </a> */}
 
           <Typography gutterBottom>
             <i className="far fa-hand-point-right">

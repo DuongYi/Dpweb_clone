@@ -293,7 +293,7 @@ function ToolDetail({ tool }) {
   const [adsDialogOpen, setAdsDialogOpen] = useState(false);
 
   const openTabHandler = () => {
-    window.open('https://rongthanonline.vn/', '_blank');
+    // window.open('https://rongthanonline.vn/', '_blank');
     window.open(tool.link, '_parent');
   };
 
@@ -567,14 +567,14 @@ function ToolDetail({ tool }) {
           className={moduleclasses.dialog_ads}
         >
           <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
-            <h1>RONGTHANONLINE.VN</h1>
+            <h1>DŨNG PHẠM VÔ ĐỐI</h1>
           </a>
           <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
-            <h2>Chơi hết mình, PK tới bến </h2>
+            <h2>Ngại gì không mua tool </h2>
           </a>
-          <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
+          {/* <a href="https://rongthanonline.vn/" target="_blank" rel="noreferrer">
             <img src="https://i.imgur.com/lAmF8no.png" alt="Banner1" width="100%" />
-          </a>
+          </a> */}
           {/* <a href="https://nickmt.com/" target="_blank" rel="noreferrer">
             <img src="https://i.imgur.com/lAmF8no.png" width="100%" alt="Banner2" />
           </a> */}

@@ -51,7 +51,7 @@ function Footer() {
           </div>
           <div className="footer__case">
             <h3 className="footer__contact">Liên hệ</h3>
-            <p className="contact__description">Hotline: 0387119851</p>
+            <p className="contact__description">Hotline: 0832313287</p>
             <p className="contact__description">
               Facebook:
               {' '}

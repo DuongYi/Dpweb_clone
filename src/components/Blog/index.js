@@ -17,7 +17,7 @@ function Blog({ children }) {
               <img src="/static/images/banner/qc1.gif" alt="qc" width="100%" />
               <img src="/static/images/banner/qc3.gif" alt="qc" width="100%" />
             </a> */}
-            <div className={classes['div-ads']}>
+            {/* <div className={classes['div-ads']}>
               <div className={classes['module-inside']}>
                 <p>Rồng thần Online</p>
                 <a href="">
@@ -27,7 +27,7 @@ function Blog({ children }) {
                 </a>
 
               </div>
-            </div>
+            </div> */}
           </div>
           {children}
           <div className={classes.boxAds} />
